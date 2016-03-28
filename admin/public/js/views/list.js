@@ -243,7 +243,13 @@ jQuery(function($) {
 							queryFilter.value = data.value;
 						}
 						break;
-					
+
+					case 's3image':
+						if (data.value) {
+							queryFilter.value = data.value;
+						}
+						break;
+
 					case 'relationship':
 						if (value = parseValueWithType(data.type, $filter.find('input[type=hidden]').val())) {// eslint-disable-line no-cond-assign
 							queryFilter.value = value;
